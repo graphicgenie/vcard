@@ -8,7 +8,6 @@ use JeroenDesloovere\VCard\Formatter\Property\NodeFormatterInterface;
 use JeroenDesloovere\VCard\Formatter\Property\CompanyFormatter;
 use JeroenDesloovere\VCard\Parser\Property\CompanyParser;
 use JeroenDesloovere\VCard\Parser\Property\NodeParserInterface;
-
 use JeroenDesloovere\VCard\Property\Value\StringValue;
 
 final class Company extends StringValue implements PropertyInterface, SimpleNodeInterface
