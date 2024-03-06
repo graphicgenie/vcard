@@ -16,9 +16,12 @@ final class Type implements PropertyParameterInterface, SimpleNodeInterface
     protected const HOME = 'home';
     protected const WORK = 'work';
 
+    protected const CELL = 'cell';
+
     public const POSSIBLE_VALUES = [
         self::HOME,
         self::WORK,
+        self::CELL
     ];
 
     private $value;
@@ -74,5 +77,15 @@ final class Type implements PropertyParameterInterface, SimpleNodeInterface
     public function isWork(): bool
     {
         return $this->value === self::WORK;
+    }
+
+    public static function cell(): self
+    {
+        return new self(self::CELL);
+    }
+
+    public function isCell(): bool
+    {
+        return $this->value === self::CELL;
     }
 }

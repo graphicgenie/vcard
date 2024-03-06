@@ -19,7 +19,7 @@ final class TelephoneFormatter implements NodeFormatterInterface
     public function getVcfString(): string
     {
         return $this->telephone->getNode() .
-          ';TYPE=' . $this->telephone->getType()->__toString() .
-          ';VALUE=' . $this->telephone->getValue() . ':tel:' . $this->telephone->getTelephoneNumber();
+            ';TYPE=' . $this->telephone->getType() .
+            ':' . $this->telephone->getTelephoneNumber();
     }
 }
